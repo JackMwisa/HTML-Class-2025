@@ -14,16 +14,26 @@
 
 
 <!-- Iframes google -->
-<iframe  width="548" height="646" src="https://ayanafrica.org/" frameborder="0"></iframe>
-
-<iframe width="548" height="646" src="./challenge.html"></iframe>
-
-<iframe width="548" height="646" src="doc.pdf" frameborder="0">
-
-    <a href="doc.pdf">Download My PDF</a>
-
-</iframe>
+ 
 
 
+<!-- First way using EMBED -->
+<embed src="doc.pdf" type="application/pdf" width="25%" height="25%">
+    
+<!-- USING IFRAMES -->
+<iframe src="doc.pdf" width="25%" height="25%">
+    <a href="doc.pdf">Download the PDF</a>
+  </iframe>
+
+  <!-- USING OBJECT -->
+  <object data="doc.pdf" type="application/pdf" width="25%" height="25%">
+    <img src="broken.png" alt="PDF not found">
+    <p>Download the PDF <a href="doc.pdf">here</a></p>
+  </object>
+
+
+  
 </body>
+
+
 </html>
