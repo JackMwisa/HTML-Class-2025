@@ -1,102 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms</title>
 </head>
 
-<body style="margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif;">
-
-
+<body style="
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    ">
     <!-- Shortcut for commenting in VS Code is CTRL + / -->
 
     <!-- Forms -->
 
-    <form action="" id="form" style="display: block;">
-       
+    <form action="" id="form" style="display: block">
         <div>
             <label for="name">Name: </label>
-            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <input type="text" name="name" id="name" placeholder="Enter your name" />
         </div>
 
         <div>
             <label for="email">Email: </label>
-            <input type="email" name="email" id="email" placeholder="Enter your email">
-        </div> 
-
-        <div>
-            <label for="password">Password: </label>
-            <input type="password" name="password" id="password" placeholder="Enter your password">
-         
+            <input type="email" name="email" id="email" placeholder="Enter your email" />
         </div>
 
+        <div>
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" placeholder="Enter your password" />
+        </div>
 
         <div>
             <label for="password">Password: </label>
-            <input type="password" name="password" id="password" placeholder="Repeat your password">
-            </div>
-    
+            <input type="password" name="password" id="password" placeholder="Repeat your password" />
+        </div>
 
         <div>
             <label for="bio">Bio: </label>
             <textarea name="bio" id="bio" cols="40" rows="10" placeholder="Enter your bio"></textarea>
         </div>
 
-        
         <div>
-        <!-- Bio -->
-        <label for="gender">Male</label>
-        <input type="radio" name="gender">
-        <label for="gender">Female</label>
-        <input type="radio" name="gender">
-    </div>
-
-
-        <br>
-        <br>
-
-
-        <div>
-        <!-- DOB -->
-        <label for="dob">Date of Birth: </label>
-        <input type="date" name="dob" id="dob">
-    </div>
-        <br>
-
-
-        <div>
-        <!-- Hobbies -->
-        <label for="hobbies">Hobbies: </label>
-        <label for="hobbies">Reading</label>
-        <input type="checkbox" name="hobbies">
-        <label for="hobbies">Writing</label>
-        <input type="checkbox" name="hobbies">
-        <label for="hobbies">Coding</label>
-        <input type="checkbox" name="hobbies">
-
-    </div>
-        <br> 
-
-
-        <div>
-        <!-- CV Upload  -->
-        <label for="cv">Upload your CV: </label>
-        <br>
-        <input type="file" name="cv" id="cv">
-        </div>
-        <br>
-
-
-        <div>
-         <input type="button" value="Submit">
+            <!-- Bio -->
+            <label for="gender">Male</label>
+            <input type="radio" name="gender" />
+            <label for="gender">Female</label>
+            <input type="radio" name="gender" />
         </div>
 
-        
+        <br />
+        <br />
+
+        <div>
+            <!-- DOB -->
+            <label for="dob">Date of Birth: </label>
+            <input type="date" name="dob" id="dob" />
+        </div>
+        <br />
+
+        <div>
+            <!-- Hobbies -->
+            <label for="hobbies">Hobbies: </label>
+            <label for="hobbies">Reading</label>
+            <input type="checkbox" name="hobbies" />
+            <label for="hobbies">Writing</label>
+            <input type="checkbox" name="hobbies" />
+            <label for="hobbies">Coding</label>
+            <input type="checkbox" name="hobbies" />
+        </div>
+        <br />
+
+        <div>
+            <!-- CV Upload  -->
+            <label for="cv">Upload your CV: </label>
+            <br />
+            <input type="file" name="cv" id="cv" />
+        </div>
+        <br />
+
+        <div>
+            <input type="button" value="Submit" />
+        </div>
     </form>
-
-
-    
-
 </body>
+
 </html>
