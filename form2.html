@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="form2-styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Registration Form</h1>
+      <p class="subtitle">
+        Hello, this is a registration form. Please fill in the form below to
+        register.
+      </p>
+
+      <form id="registration-form">
+        <!-- Personal Information Section -->
+        <fieldset>
+          <legend>Personal Information</legend>
+          <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter your phone number"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required />
+          </div>
+
+          <div class="form-group">
+            <label>Gender:</label>
+            <div class="radio-group">
+              <label>
+                <input type="radio" name="gender" value="male" required /> Male
+              </label>
+              <label>
+                <input type="radio" name="gender" value="female" required /> Female
+              </label>
+              <label>
+                <input type="radio" name="gender" value="other" required /> Other
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Account Information Section -->
+        <fieldset>
+          <legend>Account Information</legend>
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Choose a username"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="confirm-password">Confirm Password:</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              placeholder="Repeat your password"
+              required
+            />
+          </div>
+        </fieldset>
+
+        <!-- Additional Information Section -->
+        <fieldset>
+          <legend>Additional Information</legend>
+          <div class="form-group">
+            <label for="bio">Bio:</label>
+            <textarea
+              id="bio"
+              name="bio"
+              placeholder="Tell us about yourself..."
+              rows="5"
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+              <option value="" disabled selected>Select your country</option>
+              <option value="usa">United States</option>
+              <option value="canada">Canada</option>
+              <option value="uk">United Kingdom</option>
+              <option value="australia">Australia</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Hobbies:</label>
+            <div class="checkbox-group">
+              <label>
+                <input type="checkbox" name="hobbies" value="reading" /> Reading
+              </label>
+              <label>
+                <input type="checkbox" name="hobbies" value="writing" /> Writing
+              </label>
+              <label>
+                <input type="checkbox" name="hobbies" value="coding" /> Coding
+              </label>
+              <label>
+                <input type="checkbox" name="hobbies" value="sports" /> Sports
+              </label>
+              <label>
+                <input type="checkbox" name="hobbies" value="music" /> Music
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="profile-pic">Profile Picture:</label>
+            <input type="file" id="profile-pic" name="profile-pic" accept="image/*" />
+          </div>
+
+          <div class="form-group">
+            <label for="cv">Upload CV:</label>
+            <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" />
+          </div>
+        </fieldset>
+
+        <!-- Terms and Conditions -->
+        <div class="form-group terms">
+          <label>
+            <input type="checkbox" name="terms" required /> I agree to the
+            <a href="#">terms and conditions</a>.
+          </label>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group">
+          <button type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
