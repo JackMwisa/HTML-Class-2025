@@ -5,44 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
 </head>
-<body>
+
+<body style="margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif;">
 
 
     <!-- Shortcut for commenting in VS Code is CTRL + / -->
 
     <!-- Forms -->
 
-    <form action="" id="form">
-        <label for="name">Name: </label>
-        <input type="text" name="name" id="name" placeholder="Enter your name">
-        <br>
-        <label for="email">Email: </label>
-        <input type="email" name="email" id="email" placeholder="Enter your email">
-        <br>
-        <label for="password">Password: </label>
-        <input type="password" name="password" id="password" placeholder="Enter your password">
-        <br>
+    <form action="" id="form" style="display: block;">
+       
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+        </div>
 
-        <label for="password">Password: </label>
-        <input type="password" name="password" id="password" placeholder="Repeat your password">
-        <br>
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+        </div> 
 
+        <div>
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" placeholder="Enter your password">
+         
+        </div>
+
+
+        <div>
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" placeholder="Repeat your password">
+            </div>
+    
+
+        <div>
+            <label for="bio">Bio: </label>
+            <textarea name="bio" id="bio" cols="40" rows="10" placeholder="Enter your bio"></textarea>
+        </div>
+
+        
+        <div>
         <!-- Bio -->
-        <label for="bio">Bio: </label>
-        <textarea name="bio" id="bio" cols="40" rows="10" placeholder="Enter your bio"></textarea>
-        <br>
         <label for="gender">Male</label>
         <input type="radio" name="gender">
         <label for="gender">Female</label>
         <input type="radio" name="gender">
+    </div>
+
+
         <br>
         <br>
 
+
+        <div>
         <!-- DOB -->
         <label for="dob">Date of Birth: </label>
         <input type="date" name="dob" id="dob">
-        <br><br>
+    </div>
+        <br>
 
+
+        <div>
         <!-- Hobbies -->
         <label for="hobbies">Hobbies: </label>
         <label for="hobbies">Reading</label>
@@ -51,16 +74,24 @@
         <input type="checkbox" name="hobbies">
         <label for="hobbies">Coding</label>
         <input type="checkbox" name="hobbies">
-        <br> <br>
+
+    </div>
+        <br> 
+
+
+        <div>
         <!-- CV Upload  -->
         <label for="cv">Upload your CV: </label>
         <br>
         <input type="file" name="cv" id="cv">
+        </div>
         <br>
 
 
-        <br>
-        <input type="button" value="Submit">
+        <div>
+         <input type="button" value="Submit">
+        </div>
+
         
     </form>
 
