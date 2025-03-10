@@ -11,7 +11,10 @@ table, th, td {
     border-collapse: collapse;
 }
 
-
+p {
+    font-family: verdana;
+    font-size: 20px;
+  }
 
 .heading{
     text-align: center;
