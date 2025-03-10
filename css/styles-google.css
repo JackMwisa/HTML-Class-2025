@@ -1,12 +1,49 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    font-size: 14px;
+}
+
+header nav a {
+    margin-left: 15px;
+    color: #202124;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.menu-icon, .profile-icon {
+    font-size: 20px;
+    color: #5f6368;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f8f9fa;
+    flex-grow: 1;
+    margin-top: -100px;
 }
 
 .google-logo img {
@@ -16,19 +53,40 @@ body {
 
 .search-container {
     margin: 20px 0;
+    width: 100%;
+    max-width: 584px;
 }
 
 .search-bar {
-    width: 500px;
-    padding: 10px;
+    display: flex;
+    align-items: center;
     border: 1px solid #dfe1e5;
     border-radius: 24px;
-    font-size: 16px;
-    outline: none;
+    padding: 10px 15px;
+    width: 100%;
 }
 
-.search-bar:focus {
+.search-bar:hover {
     box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.search-icon, .lens-icon {
+    width: 24px;
+    height: 24px;
+    opacity: 0.5;
+}
+
+.search-icon:hover, .lens-icon:hover {
+    opacity: 1;
+    cursor: pointer;
 }
 
 .buttons {
@@ -49,4 +107,44 @@ body {
 .search-button:hover {
     border: 1px solid #dadce0;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Languages */
+.languages {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #5f6368;
+}
+
+.languages a {
+    color: #1a0dab;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.languages a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #f2f2f2;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+footer a {
+    color: #5f6368;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-left, .footer-right {
+    display: flex;
 }
