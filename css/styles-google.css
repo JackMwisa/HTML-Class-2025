@@ -145,6 +145,11 @@ footer a:hover {
     text-decoration: underline;
 }
 
+
+.footer-left-2{
+    display: block;
+}
+
 .footer-left, .footer-right {
     display: flex;
 }
