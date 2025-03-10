@@ -3,62 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>form 1</title>
 
-    <!-- Styles -->
-     <link rel="stylesheet" href="styles.css">
+    <!-- my css -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-
-    <!--Table  -->
-    <table>
-        <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Age</th>
-            <th>Gender</th>
-        </tr>
-
-        <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>30</td>
-            <td>Male</td>
-        </tr>
-
-        <tr>
-            <td>Jane</td>
-            <td>Doe</td>
-            <td>25</td>
-            <td>Female</td>
-        </tr>
-
-    </table>
-
-
-    <!-- Classes and IDs -->
-
-    <header>
-        <h1 class="heading" id="heading1">This is a heading</h1>
-        <p class="para" id="para1">This is a paragraph</p>
-        <p class="para" id="para2">This is a paragraph</p>
-
-        <h2 class="heading" id="heading2">This is the second heading</h2>
-        <p class="para" id="para3">This is a paragraph</p>
-        <p class="para" id="para4">This is a paragraph</p>
     
 
-        
-        <h3 class="heading" id="heading3">This is the second heading</h3>
-        <p class="para" id="para5">This is a paragraph</p>
-        <p class="para" id="para6">This is a paragraph</p>
-    
-    </header>
+    <main>
+
+        <div class="form-container">
+            <!-- My header -->
+            <div class="form-header">
+                Forgot Password
+            </div>
+            <div>
+                <!-- my form -->
+                <form>
+                    <div class="form-group">
+                        <!-- Label element -->
+                        <label for="email">Email</label>
+
+                        <!-- input of type email -->
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+                        <!-- button -->
+                        <button type="submit">Send Email</button>
+                    </div>
+                </form>
+
+                <p class="signup-link">
+                    Don't have an account?
+                    <a href="#">Sign up now</a>
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </main>
 
 
 
-
-    
 </body>
 </html>
