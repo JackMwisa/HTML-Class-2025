@@ -17,10 +17,9 @@ header {
 
 
 #logo{
-    font-family: "Oswald", sans-serif;
     color: #fbff01;
     float: left;
-    font-family: "Meow Script", cursive;
+    /* font-family: "Meow Script", cursive; */
 }
 
 #nav-list {
